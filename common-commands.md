@@ -439,7 +439,7 @@
 # Finding a fast apt mirror repository
   - `netselect-apt`
 
-# Editing gnome icons
+# Editing gnome icons (.desktop files)
   - located at /usr/share/applications/
   - edit the right `.desktop` file
   - done (no need to reload)

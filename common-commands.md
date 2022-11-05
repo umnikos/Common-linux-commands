@@ -51,9 +51,11 @@
      - `-map 0:v:0 -map 1:a:0` - pick video from the first file and audio from the second
 
 ## Concatenate two videos
-  - create `list.txt` with all of your files to concatenate:```txt
-     file one.webm
-     file two.webm```
+  - create `list.txt` with all of your files to concatenate like this:
+  ```txt
+  file one.webm
+  file two.webm
+  ```
   - then run the following command:
      - `ffmpeg -f concat -safe 0 -i list.txt -c copy output.webm`
 
@@ -142,8 +144,7 @@
   - `sudo su -c ”echo $argv[1] > /sys/class/backlight/intel_backlight/brightness”`
 
 # Make graph in terminal
-  - With spark:
-     - `spark 100 50 10 40 60 110`
+  - With spark: `spark 100 50 10 40 60 110`
 
 # Get what each open port is being used by
   - `sudo ss -ltp`

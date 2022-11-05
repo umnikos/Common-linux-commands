@@ -155,18 +155,14 @@
      - if `netstat` is not installed: `apt install net-tools`
 
 # SSH port forwarding / SSH tunneling
-  - What each type of port forwarding is:
-     - local:   client:rebound-port → server → destination-name:destination-port
-     - remote:  server:rebound-port → client → destination-name:destination-port
-     - dynamic: same as local but done to every client port
-  - `-N` is optional and tells ssh to not launch a shell (“No command”)
-  - Local port forwarding
+  - local: client:rebound-port → server → destination-name:destination-port
      - `ssh -N user@server  -L rebound-port:destination-name:destination-port`
-  - Remote (Reverse) port forwarding
+  - remote: server:rebound-port → client → destination-name:destination-port
      - `ssh -N user@server  -R rebound-port:destination-name:destination-port`
-  - Dynamic port forwarding
+  - dynamic: same as local but done to every client port
      - `ssh -N user@server  -C -D local-port-for-socks-proxy`
         - `-C` means “Compression”, is optional
+  - `-N` is optional and tells ssh to not launch a shell (“No command”)
 
 # VPN through SSH
   - `sshuttle -r user@host 0/0`

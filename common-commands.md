@@ -496,11 +496,13 @@
 
 # Send a file from place to place
   - `wormhole` (magic wormhole)
-  - snapdrop
+  - https://send-anywhere.com/
   - torrenting
   - syncthing
   - kde connect
   - ssh
+     - `sftp`
+     - `sshfs`
 
 # Fucking locales messing up my ssh session
   - `sudo locale-gen ”en_US.UTF-8”` (probably not necessary)

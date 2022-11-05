@@ -488,13 +488,11 @@
   - `chmod o+r` the gpg file
      - yeah. it’s that stupid
 
-# Virtmanager GPU acceleration
-  - setup iommu bios and grub nonsense
-  - change video to virtio and display spice to opengl with listen:none
-  - give `libvirt-qemu` user the `video` and `render` group permissions????
-  - ????
-  - `looking glass`???
-  - TODO: actually figure out how to do this
+# Virtmanager Windows VM optimizations
+  - https://leduccc.medium.com/improving-the-performance-of-a-windows-10-guest-on-qemu-a5b3f54d9cf5
+  - https://wiki.archlinux.org/title/Intel_GVT-g
+     - if you have two GPUs then you don't need to virtualize a GPU and can just directly passthrough the second one
+  - looking glass??? (I couldn't get it to work myself)
 
 # Send a file from place to place
   - `wormhole` (magic wormhole)
